@@ -11,6 +11,7 @@ includes:
   - getting_started
   - administration
   - cloudstack
+  - openstack
 
 subsections:
   administration:
@@ -34,6 +35,7 @@ subsections:
     - nics
     - remote_access_vpns
     - vpn_users
+    - s2s_vpns
     - storage # Storage section
     - volumes
     - snapshots
@@ -43,5 +45,13 @@ subsections:
     - compute_offerings
     - disk_offerings
     - zones # Zones section
+  openstack:
+    - instances
+    - flavors
+    - images
+    - floatingIps
+    - securityGroups
+    - securityGroupRules
+    - routers
 search: true
 ---

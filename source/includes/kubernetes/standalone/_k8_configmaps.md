@@ -1,4 +1,4 @@
-## configmaps
+## ConfigMaps
 
 <!-------------------- LIST CONFIG MAPS -------------------->
 

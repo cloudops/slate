@@ -64,6 +64,15 @@ includes:
   - openstack/sshKeys
   - openstack/volumes
   - openstack/snapshots
+  - kubernetes
+  - kubernetes/standalone/k8_namespaces
+  - kubernetes/standalone/k8_pods
+  - kubernetes/standalone/k8_statefulsets
+  - kubernetes/standalone/k8_daemonsets
+  - kubernetes/standalone/k8_deployments
+  - kubernetes/standalone/k8_configmaps
+  - kubernetes/standalone/k8_releases
+  - kubernetes/standalone/k8_charts
   - gcp
   - gcp/compute # Compute section
   - gcp/instances
@@ -88,23 +97,16 @@ includes:
   - gcp/ssl_certificates
   - gcp/kubernetes # Kubernetes section
   - gcp/clusters
-  - gcp/k8_pods
-  - gcp/k8_statefulsets
-  - gcp/k8_daemonsets
-  - gcp/k8_deployments
-  - gcp/k8_releases
-  - gcp/k8_charts
-  - gcp/k8_namespaces
+  - kubernetes/extension/k8_namespaces
+  - kubernetes/extension/k8_pods
+  - kubernetes/extension/k8_statefulsets
+  - kubernetes/extension/k8_daemonsets
+  - kubernetes/extension/k8_deployments
+  - kubernetes/extension/k8_configmaps
+  - kubernetes/extension/k8_releases
+  - kubernetes/extension/k8_charts
   - gcp/images
   - gcp/regions
-  - kubernetes
-  - kubernetes/k8_pods
-  - kubernetes/k8_statefulsets
-  - kubernetes/k8_daemonsets
-  - kubernetes/k8_deployments
-  - kubernetes/k8_releases
-  - kubernetes/k8_charts
-  - kubernetes/k8_namespaces
   - azure
   - azure/compute
   - azure/instances
@@ -119,6 +121,14 @@ includes:
   - azure/public_ip_addresses
   - azure/kubernetes # Kubernetes section
   - azure/clusters
+  - kubernetes/extension/k8_namespaces
+  - kubernetes/extension/k8_pods
+  - kubernetes/extension/k8_statefulsets
+  - kubernetes/extension/k8_daemonsets
+  - kubernetes/extension/k8_deployments
+  - kubernetes/extension/k8_configmaps
+  - kubernetes/extension/k8_releases
+  - kubernetes/extension/k8_charts
   - masterportal
   - masterportal/applications
   - swift

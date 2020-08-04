@@ -33,18 +33,18 @@ curl -X GET \
 
 Retrieve a list of all config maps in a given [environment](#administration-environments).
 
-| Required                   | &nbsp;                                                  |
-| -------------------------- | ------------------------------------------------------- |
-| `cluster_id` <br/>_string_ | The id of the cluster in which to list the config maps. |
+| Required                   | &nbsp;                                                 |
+| -------------------------- | ------------------------------------------------------ |
+| `cluster_id` <br/>_string_ | The id of the cluster in which to list the configmaps. |
 
-| Attributes                                 | &nbsp;                                             |
-| ------------------------------------------ | -------------------------------------------------- |
-| `id` <br/>_string_                         | The id of the config map                           |
-| `apiVersion` <br/>_string_                 | The API version used to retrieve this config map   |
-| `kind` <br/>_string_                       | The type of the returned resource. ie, ConfigMap   |
-| `metadata` <br/>_object_                   | The metadata of the config map                     |
+| Attributes                 | &nbsp;                                            |
+| -------------------------- | ------------------------------------------------- |
+| `id` <br/>_string_         | The id of the configmap.                          |
+| `apiVersion` <br/>_string_ | The API version used to retrieve this configmap.  |
+| `kind` <br/>_string_       | The type of the returned resource. ie, ConfigMap. |
+| `metadata` <br/>_object_   | The metadata of the configmap.                    |
 
-<!-------------------- GET A configmap -------------------->
+<!-------------------- GET A CONFIGMAP -------------------->
 
 ##### Get a configmap
 
@@ -74,13 +74,13 @@ curl -X GET \
 
 Retrieve a configmap and all its info in a given [environment](#administration-environments).
 
-| Required                   | &nbsp;                                                |
-| -------------------------- | ----------------------------------------------------- |
-| `cluster_id` <br/>_string_ | The id of the cluster in which to get the config map. |
+| Required                   | &nbsp;                                               |
+| -------------------------- | ---------------------------------------------------- |
+| `cluster_id` <br/>_string_ | The id of the cluster in which to get the configmap. |
+| `id` <br/>_string_         | The id of the configmap.                             |
 
-| Attributes                                 | &nbsp;                                             |
-| ------------------------------------------ | -------------------------------------------------- |
-| `id` <br/>_string_                         | The id of the config map                           |
-| `apiVersion` <br/>_string_                 | The API version used to retrieve this config map   |
-| `kind` <br/>_string_                       | The type of the returned resource. ie, ConfigMap   |
-| `metadata` <br/>_object_                   | The metadata of the config map                     |
+| Attributes                 | &nbsp;                                            |
+| -------------------------- | ------------------------------------------------- |
+| `apiVersion` <br/>_string_ | The API version used to retrieve this configmap.  |
+| `kind` <br/>_string_       | The type of the returned resource. ie, ConfigMap. |
+| `metadata` <br/>_object_   | The metadata of the configmap.                    |

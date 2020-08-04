@@ -1,8 +1,8 @@
-#### Daemon Sets
+#### daemonsets
 
-<!-------------------- LIST DAEMON SETS -------------------->
+<!-------------------- LIST daemonsetS -------------------->
 
-##### List daemon sets
+##### List daemonsets
 
 ```shell
 curl -X GET \
@@ -31,24 +31,24 @@ curl -X GET \
 
 <code>GET /services/<a href="#administration-service-connections">:service_code</a>/<a href="#administration-environments">:environment_name</a>/daemonsets?cluster_id=:cluster_id</code>
 
-Retrieve a list of all daemon sets in a given [environment](#administration-environments).
+Retrieve a list of all daemonsets in a given [environment](#administration-environments).
 
-| Required                   | &nbsp;                                                  |
-| -------------------------- | ------------------------------------------------------- |
-| `cluster_id` <br/>_string_ | The id of the cluster in which to list the daemon sets. |
+| Required                   | &nbsp;                                                 |
+| -------------------------- | ------------------------------------------------------ |
+| `cluster_id` <br/>_string_ | The id of the cluster in which to list the daemonsets. |
+| `id` <br/>_string_         | The id of the daemonset.                               |
 
 | Attributes               | &nbsp;                                                  |
 | ------------------------ | ------------------------------------------------------- |
-| `id` <br/>_string_       | The id of the daemon set                                |
-| `metadata` <br/>_object_ | The metadata of the daemon set                          |
-| `spec`<br/>_object_      | The specification used to create and run the daemon set |
-| `status`<br/>_object_    | The status information of the daemon set                |
+| `metadata` <br/>_object_ | The metadata of the daemonset.                          |
+| `spec`<br/>_object_      | The specification used to create and run the daemonset. |
+| `status`<br/>_object_    | The status information of the daemonset.                |
 
 Note that the list is not complete, since it is refering to the [kubernetes api details](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md).
 
-<!-------------------- GET A DAEMON SET -------------------->
+<!-------------------- GET A daemonset -------------------->
 
-##### Get a daemon set
+##### Get a daemonset
 
 ```shell
 curl -X GET \
@@ -74,24 +74,25 @@ curl -X GET \
 
 <code>GET /services/<a href="#administration-service-connections">:service_code</a>/<a href="#administration-environments">:environment_name</a>/daemonsets/:id?cluster_id=:cluster_id</code>
 
-Retrieve a daemon set and all its info in a given [environment](#administration-environments).
+Retrieve a daemonset and all its info in a given [environment](#administration-environments).
 
-| Required                   | &nbsp;                                                |
-| -------------------------- | ----------------------------------------------------- |
-| `cluster_id` <br/>_string_ | The id of the cluster in which to get the daemon set. |
+| Required                   | &nbsp;                                                 |
+| -------------------------- | ------------------------------------------------------ |
+| `cluster_id` <br/>_string_ | The id of the cluster in which to list the daemonsets. |
+| `id` <br/>_string_         | The id of the daemonset.                               |
 
 | Attributes               | &nbsp;                                                  |
 | ------------------------ | ------------------------------------------------------- |
-| `id` <br/>_string_       | The id of the daemon set                                |
-| `metadata` <br/>_object_ | The metadata of the daemon set                          |
-| `spec`<br/>_object_      | The specification used to create and run the daemon set |
-| `status`<br/>_object_    | The status information of the daemon set                |
+| `metadata` <br/>_object_ | The metadata of the daemonset.                          |
+| `spec`<br/>_object_      | The specification used to create and run the daemonset. |
+| `status`<br/>_object_    | The status information of the daemonset.                |
 
 Note that the list is not complete, since it is refering to the [kubernetes api details](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md).
 
-<!-------------------- CREATE DAEMON SET -------------------->
+<!-------------------- CREATE daemonset -------------------->
 
-##### Create a daemon set
+##### Create a daemonset
+
 ```shell
 curl -X POST \
   -H "MC-Api-Key: your_api_key" \
@@ -139,34 +140,35 @@ curl -X POST \
 
 <code>POST /services/<a href="#administration-service-connections">:service_code</a>/<a href="#administration-environments">:environment_name</a>/daemonsets?cluster_id=:cluster_id</code>
 
-Create a daemon set in a given [environment](#administration-environments).
+Create a daemonset in a given [environment](#administration-environments).
 
-| Required Attributes                        | &nbsp;                                                                    |
-| ------------------------------------------ | --------------------------------------------------------------------------|
-| `apiVersion` <br/> _string_                | The api version (versioned schema) of the daemon set                      |
-| `metadata` <br/>_object_                   | The metadata of the daemon set                                            |
-| `metadata.name` <br/>_string_              | The name of the daemon set                                                |
-| `spec`<br/>_object_                        | The specification used to create and run the daemon set                   |
-| `spec.selector`<br/>_object_               | The label query over the daemon set's resources                           |
-| `spec.template`<br/>_object_               | The data a daemon set's pod should have when created                      |
-| `spec.spec`<br/>*object*                   | The specification used to create and run the pod(s) within the daemon set |
+| Required Attributes           | &nbsp;                                                                    |
+| ----------------------------- | ------------------------------------------------------------------------- |
+| `cluster_id` <br/>_string_    | The id of the cluster in which to list the daemonsets.                    |
+| `apiVersion` <br/> _string_   | The api version (versioned schema) of the daemonset.                      |
+| `metadata` <br/>_object_      | The metadata of the daemonset.                                            |
+| `metadata.name` <br/>_string_ | The name of the daemonset.                                                |
+| `spec`<br/>_object_           | The specification used to create and run the daemonset.                   |
+| `spec.selector`<br/>_object_  | The label query over the daemonset's resources.                           |
+| `spec.template`<br/>_object_  | The data a daemonset's pod should have when created.                      |
+| `spec.spec`<br/>_object_      | The specification used to create and run the pod(s) within the daemonset. |
 
-| Optional Attributes                        | &nbsp;                                                                    |
-| ------------------------------------------ | ------------------------------------------------------------------------- |
-| `kind`<br/>_string_                        | The string value representing the REST resource this object represents    |
-| `metadata.namespace` <br/>_string_         | The namespace in which the daemon set is created                          |
-| `spec.selector.matchLabels`<br/>_object_   | The key value pairs retrieved by a label query from a daemon set          |
+| Optional Attributes                      | &nbsp;                                                                  |
+| ---------------------------------------- | ----------------------------------------------------------------------- |
+| `kind`<br/>_string_                      | The string value representing the REST resource this object represents. |
+| `metadata.namespace` <br/>_string_       | The namespace in which the daemonset is created.                        |
+| `spec.selector.matchLabels`<br/>_object_ | The key value pairs retrieved by a label query from a daemonset.        |
 
 Return value:
 
-| Attributes                 | &nbsp;                                              |
----------------------------- | ----------------------------------------------------|
-| `taskId` <br/>*string*     | The id corresponding to the create daemon set task. |
-| `taskStatus` <br/>_string_ | The status of the operation.                        |
+| Attributes                 | &nbsp;                                             |
+| -------------------------- | -------------------------------------------------- |
+| `taskId` <br/>_string_     | The id corresponding to the create daemonset task. |
+| `taskStatus` <br/>_string_ | The status of the operation.                       |
 
-<!-------------------- DELETE DAEMON SET -------------------->
+<!-------------------- DELETE daemonset -------------------->
 
-##### Delete a daemon set
+##### Delete a daemonset
 
 ```shell
 curl -X DELETE \
@@ -185,9 +187,16 @@ curl -X DELETE \
 
 <code>DELETE /services/<a href="#administration-service-connections">:service_code</a>/<a href="#administration-environments">:environment_name</a>/daemonsets/:id?cluster_id=:cluster_id</code>
 
-Delete a daemon set from a given [environment](#administration-environments).
+Delete a daemonset from a given [environment](#administration-environments).
 
-| Attributes                 | &nbsp;                                              |
-| -------------------------- | --------------------------------------------------- |
-| `taskId` <br/>_string_     | The id corresponding to the delete daemon set task. |
-| `taskStatus` <br/>_string_ | The status of the operation.                        |
+| Required                   | &nbsp;                                                  |
+| -------------------------- | ------------------------------------------------------- |
+| `cluster_id` <br/>_string_ | The id of the cluster in which to delete the daemonset. |
+| `id` <br/>_string_         | The id of the daemonset.                                |
+
+Return value:
+
+| Attributes                 | &nbsp;                                             |
+| -------------------------- | -------------------------------------------------- |
+| `taskId` <br/>_string_     | The id corresponding to the delete daemonset task. |
+| `taskStatus` <br/>_string_ | The status of the operation.                       |

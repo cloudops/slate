@@ -1,6 +1,6 @@
 ### ConfigMaps
 
-<!-------------------- LIST CONFIG MAPS -------------------->
+<!-------------------- LIST CONFIGMAPS -------------------->
 
 #### List configmaps
 
@@ -31,14 +31,17 @@ curl -X GET \
 
 <code>GET /services/<a href="#administration-service-connections">:service_code</a>/<a href="#administration-environments">:environment_name</a>/configmaps</code>
 
-Retrieve a list of all config maps in a given [environment](#administration-environments).
+Retrieve a list of all configmaps in a given [environment](#administration-environments).
 
-| Attributes                                 | &nbsp;                                                  |
-| ------------------------------------------ | ------------------------------------------------------- |
-| `id` <br/>_string_                         | The id of the config map                                |
-| `apiVersion` <br/>_string_                 | The API version used to retrieve this config map        |
-| `kind` <br/>_string_                       | The type of the returned resource. ie, ConfigMap        |
-| `metadata` <br/>_object_                   | The metadata of the config map                          |
+| Required           | &nbsp;                   |
+| ------------------ | ------------------------ |
+| `id` <br/>_string_ | The id of the configmap. |
+
+| Attributes                 | &nbsp;                                            |
+| -------------------------- | ------------------------------------------------- |
+| `apiVersion` <br/>_string_ | The API version used to retrieve this configmap.  |
+| `kind` <br/>_string_       | The type of the returned resource. ie, ConfigMap. |
+| `metadata` <br/>_object_   | The metadata of the configmap.                    |
 
 <!-------------------- GET A configmap -------------------->
 
@@ -67,9 +70,12 @@ curl -X GET \
 
 Retrieve a configmap and all its info in a given [environment](#administration-environments).
 
-| Attributes                                 | &nbsp;                                                  |
-| ------------------------------------------ | ------------------------------------------------------- |
-| `id` <br/>_string_                         | The id of the config map                                |
-| `apiVersion` <br/>_string_                 | The API version used to retrieve this config map        |
-| `kind` <br/>_string_                       | The type of the returned resource. ie, ConfigMap        |
-| `metadata` <br/>_object_                   | The metadata of the config map                          |
+| Required Attributes | &nbsp;                   |
+| ------------------- | ------------------------ |
+| `id` <br/>_string_  | The id of the configmap. |
+
+| Attributes                 | &nbsp;                                            |
+| -------------------------- | ------------------------------------------------- |
+| `apiVersion` <br/>_string_ | The API version used to retrieve this configmap.  |
+| `kind` <br/>_string_       | The type of the returned resource. ie, ConfigMap. |
+| `metadata` <br/>_object_   | The metadata of the configmap.                    |

@@ -19,9 +19,9 @@ curl -X GET \
       "id": "default-token-xxxmt/default",
       "apiVersion": "v1",
       "data": {
-            "ca.crt": [],
-            "namespace": [],
-            "token": []
+        "ca.crt": [],
+        "namespace": [],
+        "token": []
       },
       "kind": "Secret",
       "metadata": {},
@@ -39,7 +39,7 @@ curl -X GET \
 Retrieve a list of all secrets in a given [environment](#administration-environments).
 
 | Attributes                 | &nbsp;                                                                     |
-| -------------------------- | ---------------------------------------------------------------------------|
+| -------------------------- | -------------------------------------------------------------------------- |
 | `id` <br/>_string_         | The id of the secret.                                                      |
 | `apiVersion` <br/>_string_ | The API version used to retrieve the secret.                               |
 | `data` <br/>_string_       | The data that the secret contains.                                         |
@@ -61,18 +61,18 @@ curl -X GET \
 
 ```json
 {
+  "data": {
+    "id": "default-token-xxxmt/default",
+    "apiVersion": "v1",
     "data": {
-        "id": "default-token-xxxmt/default",
-        "apiVersion": "v1",
-        "data": {
-            "ca.crt": [],
-            "namespace": [],
-            "token": []
-        },
-        "kind": "Secret",
-        "metadata": {},
-        "type": "kubernetes.io/service-account-token"
-    }
+      "ca.crt": [],
+      "namespace": [],
+      "token": []
+    },
+    "kind": "Secret",
+    "metadata": {},
+    "type": "kubernetes.io/service-account-token"
+  }
 }
 ```
 
@@ -80,9 +80,12 @@ curl -X GET \
 
 Retrieve a secret and all its info in a given [environment](#administration-environments).
 
+| Required           | &nbsp;                |
+| ------------------ | --------------------- |
+| `id` <br/>_string_ | The id of the secret. |
+
 | Attributes                 | &nbsp;                                                                     |
-| -------------------------- | ---------------------------------------------------------------------------|
-| `id` <br/>_string_         | The id of the secret.                                                      |
+| -------------------------- | -------------------------------------------------------------------------- |
 | `apiVersion` <br/>_string_ | The API version used to retrieve the secret.                               |
 | `data` <br/>_string_       | The data that the secret contains.                                         |
 | `metadata` <br/>_object_   | The metadata of the secret.                                                |

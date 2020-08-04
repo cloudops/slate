@@ -1,6 +1,6 @@
-#### daemonsets
+#### DaemonSets
 
-<!-------------------- LIST daemonsetS -------------------->
+<!-------------------- LIST DAEMONSETS -------------------->
 
 ##### List daemonsets
 
@@ -46,7 +46,7 @@ Retrieve a list of all daemonsets in a given [environment](#administration-envir
 
 Note that the list is not complete, since it is refering to the [kubernetes api details](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md).
 
-<!-------------------- GET A daemonset -------------------->
+<!-------------------- GET A DAEMONSET -------------------->
 
 ##### Get a daemonset
 
@@ -89,7 +89,7 @@ Retrieve a daemonset and all its info in a given [environment](#administration-e
 
 Note that the list is not complete, since it is refering to the [kubernetes api details](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md).
 
-<!-------------------- CREATE daemonset -------------------->
+<!-------------------- CREATE DAEMONSET -------------------->
 
 ##### Create a daemonset
 
@@ -166,7 +166,7 @@ Return value:
 | `taskId` <br/>_string_     | The id corresponding to the create daemonset task. |
 | `taskStatus` <br/>_string_ | The status of the operation.                       |
 
-<!-------------------- DELETE daemonset -------------------->
+<!-------------------- DELETE A DAEMONSET -------------------->
 
 ##### Delete a daemonset
 

@@ -1,6 +1,6 @@
 #### ConfigMaps
 
-<!-------------------- LIST CONFIG MAPS -------------------->
+<!-------------------- LIST CONFIGMAPS -------------------->
 
 ##### List configmaps
 

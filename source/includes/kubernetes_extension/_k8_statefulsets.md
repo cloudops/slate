@@ -1,6 +1,6 @@
-#### statefulsets
+#### StatefulSets
 
-<!-------------------- LIST statefulsetS -------------------->
+<!-------------------- LIST STATEFULSETS -------------------->
 
 ##### List statefulsets
 
@@ -46,7 +46,7 @@ Retrieve a list of all statefulsets in a given [environment](#administration-env
 
 Note that the list is not complete, since it is refering to the [kubernetes api details](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md).
 
-<!-------------------- GET A statefulset -------------------->
+<!-------------------- GET A STATEFULSET -------------------->
 
 ##### Get a statefulset
 
@@ -90,7 +90,7 @@ Retrieve a statefulset and all its info in a given [environment](#administration
 
 Note that the list is not complete, since it is refering to the [kubernetes api details](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md).
 
-<!-------------------- CREATE A statefulset -------------------->
+<!-------------------- CREATE A STATEFULSET -------------------->
 
 ##### Create a statefulset
 
@@ -168,7 +168,7 @@ Return value:
 | `taskId` <br/>_string_     | The id corresponding to the create statefulset task. |
 | `taskStatus` <br/>_string_ | The status of the operation.                         |
 
-<!-------------------- DELETE statefulset -------------------->
+<!-------------------- DELETE A STATEFULSET -------------------->
 
 ##### Delete a statefulset
 

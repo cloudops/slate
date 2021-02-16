@@ -40,7 +40,8 @@ curl -X GET "https://cloudmc_endpoint/rest/quotas" \
       "ceiling": 500
     }
   ],
-  "isDefaultForServiceConnection": true
+  "defaultForService": true,
+  "defaultForTrial": true
 }
 ```
 
@@ -61,7 +62,7 @@ Required | &nbsp;
 Optional | &nbsp;
 -------- | --------
 `ownerOrganization`<br/>*[Organization](#administration-organization)* | Organization in which the quota will be created. *Defaults to caller's organization*.<br/>*required:* `id`
-`isDefaultForServiceConnection`<br/>*Boolean* | A flag denoting if this quota is the default quota for this connection. There can only be one default quota per connection/organization.
+`defaultForService`<br/>*Boolean* | A flag denoting if this quota is the default quota for this connection. There can only be one default quota per connection/organization.
 `defaultForTrial`<br/>*Boolean* | A flat denoting if this quota is the default quota for a trial. There can only be one default trial quota per connection/organization.
 
 The responses' `data` field contains the created [quota](#administration-quota) with its `id`.

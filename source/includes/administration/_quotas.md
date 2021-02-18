@@ -107,7 +107,6 @@ QuotaDetail Attributes | &nbsp;
 `labelKey`<br/>*string* | The key used for the label.
 `metricIdentifier`<br/>*string* | Id matching the metric identifiers provided by the plugin writer.
 `ceiling`<br/>*number* | The ceiling value (metric).
-`ceiling`<br/>*number* | The maximum for the type (metric).
 `limitsize`<br/>*number* | `DEPRECATED` The maximum for the type (metric).
 
 <!-------------------- GET A QUOTA -------------------->
@@ -208,5 +207,4 @@ QuotaDetail Attributes | &nbsp;
 `labelKey`<br/>*string* | The key used for the label.
 `metricIdentifier`<br/>*string* | Id matching the metric identifiers provided by the plugin writer.
 `ceiling`<br/>*number* | The ceiling value (metric).
-`ceiling`<br/>*number* | The maximum for the type (metric).
 `limitsize`<br/>*number* | `DEPRECATED` The maximum for the type (metric).

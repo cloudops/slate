@@ -85,7 +85,6 @@ curl "https://cloudmc_endpoint/api/v2/quotas" \
 ```
 An array of quotas with the following attributes are returned.
 
-
 Quota Attributes | &nbsp;
 ---------- | -----------
 `id`<br/>*UUID* | The id of the quota.
@@ -105,21 +104,20 @@ QuotaDetail Attributes | &nbsp;
 ---------- | -----------
 `id`<br/>*UUID* | The id of the quota detail.
 `type`<br/>*string* | The type of quota (metric).
+`labelKey`<br/>*string* | The key used for the label.
 `metricIdentifier`<br/>*string* | Id matching the metric identifiers provided by the plugin writer.
 `ceiling`<br/>*number* | The ceiling value (metric).
-`type`<br/>*string* | The type of quota (metric).
 `ceiling`<br/>*number* | The maximum for the type (metric).
 `limitsize`<br/>*number* | `DEPRECATED` The maximum for the type (metric).
 
 <!-------------------- GET A QUOTA -------------------->
-
 
 ### Retrieve a quota
 
 `GET /quota/:id`
 
 ```shell
-# Retrieve visible a resource commitment
+# Retrieve a specific quota
 
 ```shell
 # Retrieve a specific quota
@@ -188,7 +186,6 @@ curl "https://cloudmc_endpoint/api/v2/quotas/:id" \
 ```
 A quota with the following attributes are returned.
 
-
 Quota Attributes | &nbsp;
 ---------- | -----------
 `id`<br/>*UUID* | The id of the quota.
@@ -208,8 +205,8 @@ QuotaDetail Attributes | &nbsp;
 ---------- | -----------
 `id`<br/>*UUID* | The id of the quota detail.
 `type`<br/>*string* | The type of quota (metric).
+`labelKey`<br/>*string* | The key used for the label.
 `metricIdentifier`<br/>*string* | Id matching the metric identifiers provided by the plugin writer.
 `ceiling`<br/>*number* | The ceiling value (metric).
-`type`<br/>*string* | The type of quota (metric).
 `ceiling`<br/>*number* | The maximum for the type (metric).
 `limitsize`<br/>*number* | `DEPRECATED` The maximum for the type (metric).

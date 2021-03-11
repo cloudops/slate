@@ -13,7 +13,7 @@ Retrieves a list of activities on a given organization. Optional parameters `org
 Optional Query Parameters 	 | &nbsp;
 ---------------------------- | -----------
 `organizationId`<br/>*UUID* | The organization id for which we want to get the activities from. When not specified, the activities for the organization the current user is associated to will be returned.
-`only_mine`<br/>*boolean* | Indicates if the list should include only activity performed by the current user. When not specified, the value is `false`.
+`only_mine`<br/>*boolean* | Indicates if the list should include only activities performed by the current user. When not specified, the value is `false`.
 `includeSubOrgs`<br/>*boolean* | Indicates if the list should include the sub-organizations.  When not specified, the value is `false`.
 `environmentId`<br/>*UUID* | The environment id for which we want to get the activities from. When not specified, all environments will be returned.
 `serviceConnectionId`<br/>*UUID* | The environment id for which we want to get the activities from. When not specified, all environments will be returned.
@@ -25,7 +25,7 @@ Optional Query Parameters 	 | &nbsp;
 `end`<br/>*date* | The end timestamp in RFC3339 text format which which we want to get the activities from. When not specified, all events will be returned.
 
 ```shell
-# Retrieve quotas list
+# Retrieve activity list
 curl "https://cloudmc_endpoint/api/v1/activity_log" \
    -H "MC-Api-Key: your_api_key"
 ```
@@ -67,8 +67,8 @@ Activity Attributes | &nbsp;
 `eventCode`<br/>*string* | The human readable code for the event.
 `category`<br/>*string* | The category the event belongs to.
 `status`<br/>*string* | The status of the event.
-`created`<br/>*string* | The date in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) the activity was created.
-`updated`<br/>*string* | The date in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) the activity was created.
+`created`<br/>*string* | The date in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) that the activity was created.
+`updated`<br/>*string* | The date in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) that the activity was created.
 `userId`<br/>*UUID* | The id of the user who generated the activity.
 `username`<br/>*string* | The username of the user who generated the activity.
 `userFirstname`<br/>*string* | The first name of the user who generated the activity.
@@ -95,13 +95,13 @@ Optional Query Parameters  | &nbsp;
 `include_subs`<br/>*boolean* | If we want to include sub-organizations activity codes.
 
 ```shell
-# Retrieve quotas list
+# Retrieve activity codes
 curl "https://cloudmc_endpoint/api/v1/activity_log/codes" \
    -H "MC-Api-Key: your_api_key"
 ```
 > The above command returns a JSON structured like this:
 
-```json
+```js
 {
   "data": {
     "SYSTEM": [
@@ -111,7 +111,7 @@ curl "https://cloudmc_endpoint/api/v1/activity_log/codes" \
       "custom_field.deleted",
       "organizations.provision",
       "trials.converted_to_billable",
-      ...
+      // ...
     ]
   }
 }
@@ -132,7 +132,7 @@ Optional Query Parameters  | &nbsp;
 `maxNumberOfItems`<br/>*number* | The number of items to be included in the summary.
 
 ```shell
-# Retrieve quotas list
+# Retrieve activities summary
 curl "https://cloudmc_endpoint/api/v1/activity_log/summary" \
    -H "MC-Api-Key: your_api_key"
 ```
@@ -178,8 +178,8 @@ Activity Summary Attributes | &nbsp;
 `eventCode`<br/>*string* | The human readable code for the activity event.
 `category`<br/>*string* | The category the activity event belongs to.
 `status`<br/>*string* | The status of the activity event.
-`created`<br/>*string* | The date in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) the activity was created.
-`updated`<br/>*string* | The date in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) the activity was created.
+`created`<br/>*string* | The date in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) that the activity was created.
+`updated`<br/>*string* | The date in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) that the activity was created.
 `userId`<br/>*UUID* | The id of the user who generated the activity.
 `username`<br/>*string* | The username of the user who generated the activity.
 `userFirstname`<br/>*string* | The first name of the user who generated the activity.

@@ -72,7 +72,7 @@ Attributes | &nbsp;
 ```shell
 curl -X GET \
    -H "MC-Api-Key: your_api_key" \
-   "https://cloudmc_endpoint/api/v1/services/stackpath/test-area/scripts/439b145a-7c55-4a73-8cf2-d8faabfe6d22/test-domain.com"
+   "https://cloudmc_endpoint/api/v1/services/stackpath/test-area/scripts/439b145a-7c55-4a73-8cf2-d8faabfe6d22?siteId=0a57855b-26d8-4e8f-8b77-429997c7c5fb"
 ```
 > The above command returns a JSON structured like this:
 
@@ -93,7 +93,7 @@ curl -X GET \
   }
 }
 ```
-<code>GET /services/<a href="#administration-service-connections">:service_code</a>/<a href="#administration-environments">:environment_name</a>/scripts/:id/?siteId=<a href="#stackpath-sites">:siteId</a></code>
+<code>GET /services/<a href="#administration-service-connections">:service_code</a>/<a href="#administration-environments">:environment_name</a>/scripts/:id?siteId=<a href="#stackpath-sites">:siteId</a></code>
 
 Query Params | &nbsp;
 ---- | -----------

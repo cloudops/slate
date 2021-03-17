@@ -9,7 +9,7 @@ Deploy and manage Serverless Scripts used to interact with requests made to the 
 ```shell
 curl -X GET \
    -H "MC-Api-Key: your_api_key" \
-   "https://cloudmc_endpoint/api/v1/services/stackpath/test-area/scripts/4d13a920-79b7-4129-957b-bd4f006b1ac8?siteId=0a57855b-26d8-4e8f-8b77-429997c7c5fb"
+   "https://cloudmc_endpoint/api/v1/services/stackpath/test-area/scripts?siteId=0a57855b-26d8-4e8f-8b77-429997c7c5fb"
 ```
 > The above command returns a JSON structured like this:
 
@@ -79,7 +79,7 @@ curl -X GET \
 ```json
 {
   "data": {
-    "id": "4d13a920-79b7-4129-957b-bd4f006b1ac8",
+    "id": "439b145a-7c55-4a73-8cf2-d8faabfe6d22",
     "stackId": "87e22df5-cac9-4e42-9b75-02996af95566",
     "siteId": "0a57855b-26d8-4e8f-8b77-429997c7c5fb",
     "name": "scriptName1",

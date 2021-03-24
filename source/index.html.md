@@ -197,6 +197,7 @@ includes:
   - stackpath/cdn_settings
   - stackpath/origin_settings
   - stackpath/scripts
+  - stackpath/firewallrules
   - aws
   - aws/compute
   - aws/instances

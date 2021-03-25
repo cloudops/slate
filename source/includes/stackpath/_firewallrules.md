@@ -14,7 +14,7 @@ Required Body Attribute | &nbsp;
 ------------------------| -----------
 `action`<br/>*string* | Either ALLOW or BLOCK.
 `name`<br/>*string* | The name of the rule.
-`ipStart`<br/>*string* | There start ip adress for the rule. When no `ipEnd` attribute is provided, the rule only applies for the ip provided in `ipStart`.
+`ipStart`<br/>*string* | The start ip adress for the rule. When no `ipEnd` attribute is provided, the rule only applies for the ip provided in `ipStart`.
 
 Optional Body Attribute | &nbsp;
 ----------------------- | -----------

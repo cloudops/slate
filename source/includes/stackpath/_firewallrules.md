@@ -20,7 +20,6 @@ Optional Body Attribute | &nbsp;
 ----------------------- | -----------
 `ipEnd`<br/>*string* | There end ip adress for the rule.
 
-
 ```shell
 curl -X POST \
    -H "MC-Api-Key: your_api_key" \
@@ -29,12 +28,12 @@ curl -X POST \
 ```
 > Request body example for creating a firewall rule:
 
-```js
+```json
 {
-    action: "ALLOW",
-    name: "firewall rule",
-    ipStart: "192.168.0.6",
-    ipEnd: "192.168.0.7"
+    "action": "ALLOW",
+    "name": "firewall rule",
+    "ipStart": "192.168.0.6",
+    "ipEnd": "192.168.0.7"
 }
 ```
 

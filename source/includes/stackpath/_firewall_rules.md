@@ -53,7 +53,7 @@ Attributes | &nbsp;
 `action`<br/>*string* | Either ALLOW or BLOCK.
 `enabled`<br/>*boolean* | Whether or not the rule is enabled.
 `id`<br/>*string* | The unique identifier for the rule.
-`ipEnd`<br/>*string* | There end ip adress for the rule.
+`ipEnd`<br/>*string* | The end ip adress for the rule.
 `ipStart`<br/>*string* | The start ip adress for the rule.
 `name`<br/>*string* | The name of the rule.
 `siteId`<br/>*string* | The ID of the site for which the firewall rule is applied to.
@@ -72,12 +72,12 @@ curl -X GET \
 ```json
 {
   "data":{
-    "id": "1533148",
-    "name": "Rule 1 ",
-    "ipStart": "10.10.10.10",
-    "ipEnd": "20.20.20.20",
     "action": "ALLOW",
     "enabled": "true",
+    "id": "1533148",
+    "ipEnd": "20.20.20.20",
+    "ipStart": "10.10.10.10",
+    "name": "Rule 1 ",
     "siteId": "0a57855b-26d8-4e8f-8b77-429997c7c5fb"
     },
 }
@@ -94,9 +94,59 @@ Attributes | &nbsp;
 `action`<br/>*string* | Either ALLOW or BLOCK.
 `enabled`<br/>*boolean* | Whether or not the rule is enabled.
 `id`<br/>*string* | The unique identifier for the rule.
-`ipEnd`<br/>*string* | There end ip adress for the rule.
+`ipEnd`<br/>*string* | The end ip adress for the rule.
 `ipStart`<br/>*string* | The start ip adress for the rule.
 `name`<br/>*string* | The name of the rule.
+`siteId`<br/>*string* | The ID of the site for which the firewall rule is applied to.
+
+<!-------------------- CREATE A FIREWALL RULE -------------------->
+
+### Create a firewall rule
+
+```shell
+curl -X POST \
+   -H "MC-Api-Key: your_api_key" \
+   -d "request_body" \
+   "https://cloudmc_endpoint/api/v1/services/stackpath/test-area/firewallrules?siteId=f9dea588-d7ab-4f42-b6e6-4b85f273f3db"
+```
+> Request body example for creating a firewall rule:
+
+```json
+{
+  "action": "ALLOW",
+  "enabled": true,
+  "ipEnd": "192.168.0.7",
+  "ipStart": "192.168.0.6",
+  "name": "firewall rule",
+  "siteId": "1c6c127a-bfa4-4c85-a329-13c0581b41eb"
+}
+```
+> The above commands return a JSON structured like this:
+
+```json
+{
+  "taskId": "7135ae25-8488-4bc5-a289-285c84a00a84",
+  "taskStatus": "PENDING"
+}
+```
+<code>POST /services/<a href="#administration-service-connections">:service_code</a>/<a href="#administration-environments">:environment_name</a>/firewallrules?siteId=<a href="#stackpath-sites">:siteId</a></code>
+
+Restrict access to a site using allow and block rules.
+
+Query Params | &nbsp;
+---- | -----------
+`siteId`<br/>*string* | The ID of the site for which to create the firewall rule. This parameter is required.
+
+Required| &nbsp;
+------------------------| -----------
+`action`<br/>*string* | Either ALLOW or BLOCK.
+`ipStart`<br/>*string* | The start ip adress for the rule. When no `ipEnd` attribute is provided, the rule only applies for the ip provided in `ipStart`.
+`name`<br/>*string* | The name of the rule.
+
+Optional| &nbsp;
+----------------------- | -----------
+`enabled`<br/>*boolean* | Whether or not the rule is enabled. The default value is false.
+`ipEnd`<br/>*string* | The end ip adress for the rule.
 `siteId`<br/>*string* | The ID of the site for which the firewall rule is applied to.
 
 <!-------------------- EDIT A FIREWALL RULE -------------------->
@@ -141,5 +191,5 @@ Optional | &nbsp;
 ------- | -----------
 `enabled`<br/>*boolean* | Whether or not the rule is enabled. The default value is false.
 `id`<br/>*string* | The unique identifier for the rule.
-`ipEnd`<br/>*string* | There end ip adress for the rule.
+`ipEnd`<br/>*string* | The end ip adress for the rule.
 `siteId`<br/>*string* | The ID of the site for which the firewall rule is applied to.

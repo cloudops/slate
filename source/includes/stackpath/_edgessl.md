@@ -60,4 +60,4 @@ Attributes | &nbsp;
 `forceHttps`<br/>*boolean* | Whether the site redirects all visitors to use HTTPS instead of HTTP.
 `minTlsVersion`<br/>*string* | The minimum TLS version clients must have to access the application.
 
-Only one of these attributes or both can be updated at the same time.
+One or both of these attributes can be updated at the same time.

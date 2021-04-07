@@ -442,6 +442,7 @@ curl -X POST \
 
 ```json
 {
+  "purgeType":"PATH",
   "items": [
     {
       "url": "//<domain_name>/path/to/file",
@@ -474,8 +475,9 @@ Purge custom CDN cached content of a site in a given [environment](#administrati
 
 Required | &nbsp;
 ------- | -----------
+`purgeType`<br/>*String* | The type of cache purge. Can be `URL` or `PATH`.
 `items`<br/>*Array[Object]* | The items to purge from the CDN.
-`items.url`<br/>*String* | The URL at which to delete content.
+`items.url`<br/>*String* | The URL or Path at which to delete content.
  
  Optional | &nbsp;
  ------- | -----------

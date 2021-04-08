@@ -69,8 +69,7 @@ curl -X POST \
   {
     "trigger": "HEADER",
     "operator": "MATCHES",
-    "target": "my-header",
-    "httpMethods": ["GET"]
+    "target": "my-header"
   }],
   "deliveryRuleActions": [
     {
@@ -109,7 +108,7 @@ Required| &nbsp;
 `trigger`<br/>*Enum* | Trigger for the condition. Possible values: `COOKIE`, `HEADER`, `HTTP_METHOD`, `STATUS_CODE`, and `URL`.
 `operator`<br/>*Enum* | Operator for the condition. Possible values: `EQUALS`, `MATCHES`, and `MATCHES_REGULAR_EXPRESSION`.
 `target`<br/>*String* | The target of the condition.
-`httpMethods`<br/>*Array[Enum]* | HTTP methods for the condition. Possible values are: `GET`, `POST`, `PUT`, `DELETE`, `HEAD`, `PATCH`, and `OPTIONS`.
+`httpMethods`<br/>*Array[Enum]* | HTTP methods for the condition. Possible values are: `GET`, `POST`, `PUT`, `DELETE`, `HEAD`, `PATCH`, and `OPTIONS`. This fields is only used when `trigger` is set to `HTTP_METHOD`.
 
 #### Action
 

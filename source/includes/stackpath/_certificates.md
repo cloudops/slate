@@ -42,7 +42,7 @@ Query Params | &nbsp;
 
 Attributes | &nbsp;
 --- | ---
-`id`<br/>*string* | The unique identifier of the certificate.
+`id`<br/>*UUID* | The unique identifier of the certificate.
 `siteId`<br/>*UUID* | The unique identifier of the site for which the certificate is applied to.
 `issuer`<br/>*string* | The authority who issued the certificate.
 `caBundle`<br/>*string* | A PEM PKCS #7 formatted certificate authority bundle.
@@ -101,7 +101,7 @@ Query Params | &nbsp;
 
 Attributes | &nbsp;
 --- | ---
-`id`<br/>*string* | The unique identifier of the certificate.
+`id`<br/>*UUID* | The unique identifier of the certificate.
 `siteId`<br/>*UUID* | The unique identifier of the site for which the certificate is applied to.
 `issuer`<br/>*string* | The authority who issued the certificate.
 `caBundle`<br/>*string* | A PEM PKCS #7 formatted certificate authority bundle.

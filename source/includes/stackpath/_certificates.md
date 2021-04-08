@@ -1,10 +1,10 @@
-## Certificates
+#### Certificates
 
 Add Secure Socket Layer (SSL) features to a site.
 
 <!-------------------- LIST CERTIFICATES -------------------->
 
-### List certificates
+##### List certificates
 
 ```shell
 curl -X GET \
@@ -68,7 +68,7 @@ List of possible values for the `status` attribute:
 
 <!-------------------- RETRIEVE A CERTIFICATE -------------------->
 
-### Retrieve a certificate
+##### Retrieve a certificate
 
 ```shell
 curl -X GET \

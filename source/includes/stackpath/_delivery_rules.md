@@ -122,7 +122,7 @@ Possible Attributes| &nbsp;
 `cdnHeaders`<br/>*Array* | Headers for the actions expressed as a key-value pair.
 `cacheTtl`<br/>*Number* | Time to live of the cache.
 `redirectUrl`<br/>*String* | The url to redirect to.
-`headerPattern`<br/>*String* | The header to set to modifier the response.
+`headerPattern`<br/>*String* | The header to set the modifier in the response.
 `passphrase`<br/>*String* | The passphrase for signing the url.
 `passphraseField`<br/>*String* | The passphrase field for signing the url.
 `md5TokenField`<br/>*String* | The MD5 token field for signing the url.

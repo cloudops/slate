@@ -17,8 +17,8 @@ curl -X GET \
   "data": [
     {
       "id": "2a12237d-c388-4c19-bff1-b019b837e8f1",
-      "issuer": "",
-      "caBundle": "",
+      "issuer": "Let's Encrypt",
+      "caBundle": "-----BEGIN CERTIFICATE----- MIIEZTCCA02gAwIBAgIQQAF1BIMUpMghjISpDBbN3zANBgkqhkiG9w0BAQsFADA/ MSQwIgY...",
       "status": "failed",
       "expiresAt": "2021-04-01T18:11:11.903458Z",
       "commonName": "helloworld.com",
@@ -80,8 +80,8 @@ curl -X GET \
 {
   "data": {
     "id": "2a12237d-c388-4c19-bff1-b019b837e8f1",
-    "issuer": "",
-    "caBundle": "",
+    "issuer": "Let's Encrypt",
+    "caBundle": "-----BEGIN CERTIFICATE----- MIIEZTCCA02gAwIBAgIQQAF1BIMUpMghjISpDBbN3zANBgkqhkiG9w0BAQsFADA/ MSQwIgY...",
     "status": "failed",
     "expiresAt": "2021-04-01T18:11:11.903458Z",
     "commonName": "helloworld.com",

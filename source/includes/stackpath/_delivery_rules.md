@@ -102,10 +102,6 @@ Required| &nbsp;
 `deliveryRuleConditions`<br/>*Array[[Condition](#stackpath-condition)]* | At least one condition.
 `deliveryRuleActions`<br/>*Array[[Action](#stackpath-action)]* | At least one action.
 
-Optional| &nbsp;
-------------------------| -----------
-`slug`<br/>*string* | A delivery rule's programmatic name.
-
 #### Condition
 
 Required| &nbsp;

@@ -65,13 +65,13 @@ curl -X POST \
 ```js
 {
  "name": "rule",
-  "deliveryRuleConditions": [
+  "conditions": [
   {
     "trigger": "HEADER",
     "operator": "MATCHES",
     "target": "my-header"
   }],
-  "deliveryRuleActions": [
+  "actions": [
     {
       "actionType": "REDIRECT",
       "redirectUrl": "https://my-url.com"
@@ -98,8 +98,8 @@ Query Params | &nbsp;
 Required| &nbsp;
 ------------------------| -----------
 `name`<br/>*string* | The name of the delivery rule.
-`deliveryRuleConditions`<br/>*Array[[Condition](#stackpath-condition)]* | At least one condition.
-`deliveryRuleActions`<br/>*Array[[Action](#stackpath-action)]* | At least one action.
+`conditions`<br/>*Array[[Condition](#stackpath-condition)]* | At least one condition.
+`actions`<br/>*Array[[Action](#stackpath-action)]* | At least one action.
 
 #### Condition
 

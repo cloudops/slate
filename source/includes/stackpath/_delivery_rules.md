@@ -104,7 +104,7 @@ Required| &nbsp;
 #### Update a delivery rule
 
 ```shell
-curl -X POST \
+curl -X PUT \
    -H "MC-Api-Key: your_api_key" \
    -d "request_body" \
    "https://cloudmc_endpoint/api/v1/services/stackpath/test-area/deliveryrules/d065db45-1eba-4c62-a017-d51f2d473d4a?siteId=f9dea588-d7ab-4f42-b6e6-4b85f273f3db"
@@ -136,7 +136,7 @@ curl -X POST \
   "taskStatus": "PENDING"
 }
 ```
-<code>POST /services/<a href="#administration-service-connections">:service_code</a>/<a href="#administration-environments">:environment_name</a>/deliveryrules/:ruleId?siteId=<a href="#stackpath-sites">:siteId</a></code>
+<code>PUT /services/<a href="#administration-service-connections">:service_code</a>/<a href="#administration-environments">:environment_name</a>/deliveryrules/:ruleId?siteId=<a href="#stackpath-sites">:siteId</a></code>
 
 Query Params | &nbsp;
 ---- | -----------

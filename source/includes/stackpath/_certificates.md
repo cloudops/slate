@@ -173,7 +173,7 @@ The following attributes are returned as part of the response.
 
 Attributes | &nbsp;
 ------- | -----------
-`taskId` <br/>*string* | The task id related to creation of the Certificate.
+`taskId` <br/>*string* | The task id related to creation of the certificate.
 `taskStatus` <br/>*string* | The status of the operation.
 
 <!-------------------- REQUEST A CERTIFICATE -------------------->
@@ -225,7 +225,7 @@ The following attributes are returned as part of the response.
 
 Attributes | &nbsp;
 ------- | -----------
-`taskId` <br/>*string* | The task id related to creation of the Certificate.
+`taskId` <br/>*string* | The task id related to creation of the certificate.
 `taskStatus` <br/>*string* | The status of the operation.
 
 <!-------------------- DELETE A CERTIFICATE -------------------->

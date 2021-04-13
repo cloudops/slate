@@ -1,10 +1,10 @@
-### Predefined Edge Rules
+### Predefined EdgeRules
 
-The predefined edge rules let you configure how StackPath responds to requests to your website. These predefined rules only work with domains that resolve to StackPath.
+The predefined EdgeRules let you configure how StackPath responds to requests to your website. These predefined EdgeRules only work with domains that resolve to StackPath.
 
-<!-------------------- LIST PREDEFINED EDGE RULES -------------------->
+<!-------------------- LIST PREDEFINED EDGERULES -------------------->
 
-#### List predefined edge rules
+#### List predefined EdgeRules
 
 ```shell
 curl -X GET \
@@ -36,24 +36,24 @@ curl -X GET \
 
 <code>GET /services/<a href="#administration-service-connections">:service_code</a>/<a href="#administration-environments">:environment_name</a>/predefinededgerules/<a href="#stackpath-site">:siteId</a></code>
 
-Retrieve the configuration of all predefined edge rules in a given [environment](#administration-environments) within a site.
+Retrieve the configuration of all predefined EdgeRules in a given [environment](#administration-environments) within a site.
 
 Attributes | &nbsp;
 ------- | -----------
 `allowEmptyReferrer`<br/>*boolean* | Whether or not empty referrer is allowed.
 `forceWwwEnabled`<br/>*boolean* | Whether or not redirecting every request to a www subdomain is enabled.
-`id`<br/>*UUID* | A predefined egde rules identifier which is same as siteId.
+`id`<br/>*UUID* | This ID is same as the siteId to which the predefined EdgeRules belong.
 `pseudoStreamingEnabled`<br/>*boolean* | Whether or not seeking random locations within MP4 or FLV files without downloading the entire video is enabled.
 `referrerList`<br/>*Array[string]* | The list of domains authorized to access content from the site's root scope. Wildcards can be used to specify multiple websites hosted on the same domain.
 `referrerProtectionEnabled`<br/>*boolean* | Whether or not referrer protection is enabled. This rule is used to allow only requests whose referrer header matches a URL that you specified.
 `robotsTxtEnabled`<br/>*boolean* | Whether or not custom robot.txt support is enabled. This rule is used to configure which pages or files search engine crawlers can or cannot index from the site.
 `robotsTxtFile`<br/>*string* | This field represents the robots.txt file contents. `NOTE:` When you first enable the `robotsTxtEnabled` rule, by default, the robots.txt will populate with a rule to disallow all indexing for CDN content. Any change made with this rule will override the contents of the robots.txt file on origin server.
 `scopeId`<br/>*UUID* | The ID of the CDN site's root scope that the predefined rules belongs to.
-`stackId`<br/>*UUID* | The ID of the stack that the predefined rules belongs to.
+`stackId`<br/>*UUID* | The ID of the stack that the predefined rules belong to.
 
-<!-------------------- EDIT PREDEFINED EDGE RULES  -------------------->
+<!-------------------- EDIT PREDEFINED EDGERULES  -------------------->
 
-#### Edit a predefined edge rule
+#### Edit a predefined EdgeRules
 
 ```shell
 curl -X PATCH \

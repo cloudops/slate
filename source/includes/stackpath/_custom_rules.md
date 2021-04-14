@@ -157,7 +157,7 @@ Attributes | &nbsp;
 `conditions.endValue`<br/>*string* | Second value of the condition. Only for condition operation of type `IP_RANGE`.
 
 
-<!-------------------- DELETE A SITE -------------------->
+<!-------------------- DELETE A CUSTOM RULE -------------------->
 
 #### Delete a custom rule
 

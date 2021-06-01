@@ -161,7 +161,7 @@ Attributes | &nbsp;
       "workspace": "compute",
       "promotePanel": true,
       "skipEnvironmentPicker": true
-		},
+    },
     {
       "type": "COMING_SOON",
       "name": {

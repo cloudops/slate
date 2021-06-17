@@ -36,3 +36,20 @@
   @extend %icon;
   content: "\e607";
 }
+
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('https://objects-qc.cloud.ca/v1/2b2f7dde75e641a1ab2baa3dbcba208f/public/webfonts/cerapro-regular-webfont.woff2') format('woff2'),
+       url('https://objects-qc.cloud.ca/v1/2b2f7dde75e641a1ab2baa3dbcba208f/public/webfonts/cerapro-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('https://objects-qc.cloud.ca/v1/2b2f7dde75e641a1ab2baa3dbcba208f/public/webfonts/cerapro-medium-webfont.woff2') format('woff2'),
+       url('https://objects-qc.cloud.ca/v1/2b2f7dde75e641a1ab2baa3dbcba208f/public/webfonts/cerapro-medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

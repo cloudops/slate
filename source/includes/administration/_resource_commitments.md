@@ -1,6 +1,6 @@
 ## Resource commitments
 
-Resource commitments allow you to set specific commitment levels on cloud resources available on a [service-connection](#administration-service-connections). This assures commitment to a specific set of resources on a fixed monthly price. Any additional resource usage will be billed on the utility price defined by the CMC [pricing](#administration-pricing). Commitments can either be restricted to a specific date range or be un-restricted with no end date. Whilst the commitment price is decided by the pre-defined [pricing](#administration-pricing), various discounts can be given on the resource utility price. Resource commitments allow CloudMC users to receive services at fixed discounted rates whilst enabling additional usage at utility cost.
+Resource commitments allow you to set specific commitment levels on cloud resources available on a [service-connection](#administration-service-connections). This assures commitment to a specific set of resources on a fixed monthly price. Any additional resource usage will be billed on the utility price defined by the CMC [pricing](#administration-pricing). Commitments can either be restricted to a specific date range or be un-restricted with no end date. Whilst the commitment price is decided by the pre-defined [pricing](#administration-pricing), various discounts can be given on the resource utility price. Resource commitments allow Cox Edge users to receive services at fixed discounted rates whilst enabling additional usage at utility cost.
 
 <!-------------------- LIST RESOURCE COMMITMENTS -------------------->
 
@@ -10,7 +10,7 @@ Resource commitments allow you to set specific commitment levels on cloud resour
 
 ```shell
 # Retrieve visible resource commitments
-curl "https://cloudmc_endpoint/api/v1/resource_commitments" \
+curl "https://portal.coxedge.com/api/v1/resource_commitments" \
    -H "MC-Api-Key: your_api_key"
 ```
 > The above command returns a JSON structured like this:
@@ -102,7 +102,7 @@ Attributes | &nbsp;
 ```shell
 # Retrieve visible a resource commitment
 
-curl "https://cloudmc_endpoint/api/v1/resource_commitments/fbgc7647-71e6-w69b-998a-c02rf58bf2e6" \
+curl "https://portal.coxedge.com/api/v1/resource_commitments/fbgc7647-71e6-w69b-998a-c02rf58bf2e6" \
    -H "MC-Api-Key: your_api_key"
 ```
 > The above command returns a JSON structured like this:
@@ -188,7 +188,7 @@ Attributes | &nbsp;
 ```shell
 # Create a resource commitment
 
-curl -X POST "https://cloudmc_endpoint/api/v1/resource_commitments" \
+curl -X POST "https://portal.coxedge.com/api/v1/resource_commitments" \
    -H "MC-Api-Key: your_api_key" \
    -H "Content-Type: application/json" \
    -d "request_body"
@@ -259,7 +259,7 @@ The responses' `data` field contains the created [resource-commitment](#administ
 
 ```shell
 # Update a resource commitment
-curl -X PUT "https://cloudmc_endpoint/api/v1/resource_commitments/fbgc7647-71e6-w69b-998a-c02rf58bf2e6" \
+curl -X PUT "https://portal.coxedge.com/api/v1/resource_commitments/fbgc7647-71e6-w69b-998a-c02rf58bf2e6" \
    -H "MC-Api-Key: your_api_key" \
    -H "Content-Type: application/json" \
    -d "request_body"
@@ -335,7 +335,7 @@ The responses' `data` field contains the created [resource-commitment](#administ
 ```shell
 # Delete a resource commitment
 
-curl "https://cloudmc_endpoint/api/v1/resource_commitments/fbgc7647-71e6-w69b-998a-c02rf58bf2e6" \
+curl "https://portal.coxedge.com/api/v1/resource_commitments/fbgc7647-71e6-w69b-998a-c02rf58bf2e6" \
    -X DELETE -H "MC-Api-Key: your_api_key"
 ```
 

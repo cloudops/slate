@@ -11,7 +11,7 @@ Configure methods of authentication for your organizations.
 
 ```shell
 # Retrieve identity providers
-curl "https://cloudmc_endpoint/api/v1/identity_providers" \
+curl "https://portal.coxedge.com/api/v1/identity_providers" \
    -H "MC-Api-Key: your_api_key"
 ```
 > The above command returns JSON structured like this:
@@ -80,7 +80,7 @@ Create a new identity provider.
 
 ```shell
 # Creates a new identity provider
-curl -X POST "https://cloudmc_endpoint/rest/identity_providers" \
+curl -X POST "https://portal.coxedge.com/rest/identity_providers" \
    -H "MC-Api-Key: your_api_key"
 ```
 
@@ -90,7 +90,7 @@ curl -X POST "https://cloudmc_endpoint/rest/identity_providers" \
 {
 	"provider": "CUSTOM",
 	"type": "OIDC",
-	"connectionName": "CloudMC Google",
+	"connectionName": "Cox Edge Google",
 	"displayName": "Google",
 	"parameters": [
 		{
@@ -115,7 +115,7 @@ curl -X POST "https://cloudmc_endpoint/rest/identity_providers" \
   "data": {
     "provider": "CUSTOM",
     "displayName": "Google",
-    "connectionName": "CloudMC Google",
+    "connectionName": "Cox Edge Google",
     "type": "OIDC",
     "rank": "1",
     "parameters": [
@@ -165,7 +165,7 @@ Update an existing identity provider.
 
 ```shell
 # Updates an existing identity provider
-curl -X PUT "https://cloudmc_endpoint/rest/identity_providers/c84cfe41-929b-47c9-bde4-b55a10bd2774" \
+curl -X PUT "https://portal.coxedge.com/rest/identity_providers/c84cfe41-929b-47c9-bde4-b55a10bd2774" \
    -H "MC-Api-Key: your_api_key"
 ```
 
@@ -176,7 +176,7 @@ curl -X PUT "https://cloudmc_endpoint/rest/identity_providers/c84cfe41-929b-47c9
 	"provider": "CUSTOM",
 	"type": "OIDC",
     "id": "c84cfe41-929b-47c9-bde4-b55a10bd2774",
-	"connectionName": "CloudMC Google",
+	"connectionName": "Cox Edge Google",
 	"displayName": "Google",
 	"parameters": [
 		{
@@ -202,7 +202,7 @@ curl -X PUT "https://cloudmc_endpoint/rest/identity_providers/c84cfe41-929b-47c9
     "provider": "CUSTOM",
     "displayName": "Google",
     "id": "da33bf85-6ba3-4214-a258-9442de149eff",
-    "connectionName": "CloudMC Google",
+    "connectionName": "Cox Edge Google",
     "type": "OIDC",
     "rank": "1",
     "parameters": [
@@ -252,7 +252,7 @@ Delete an existing identity provider.
 
 ```shell
 # Deletes a specified identity provider
-curl -X DELETE "https://cloudmc_endpoint/rest/identity_providers/c84cfe41-929b-47c9-bde4-b55a10bd2774" \
+curl -X DELETE "https://portal.coxedge.com/rest/identity_providers/c84cfe41-929b-47c9-bde4-b55a10bd2774" \
    -H "MC-Api-Key: your_api_key"
 ```
 > The above command(s) return(s) JSON structured like this:

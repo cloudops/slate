@@ -11,7 +11,7 @@ Retrieves a list of pricings configured in the system.
 
 ```shell
 # Retrieve pricing list
-curl "https://cloudmc_endpoint/rest/pricings" \
+curl "https://portal.coxedge.com/rest/pricings" \
    -H "MC-Api-Key: your_api_key"
 ```
 > The above command returns a JSON structured like this:
@@ -111,7 +111,7 @@ Retrieve a pricing's details.
 
 ```shell
 # Retrieve a pricing's details
-curl "https://cloudmc_endpoint/rest/pricings/03bc22bd-adc4-46b8-988d-afddc24c0cb5" \
+curl "https://portal.coxedge.com/rest/pricings/03bc22bd-adc4-46b8-988d-afddc24c0cb5" \
    -H "MC-Api-Key: your_api_key"
 ```
 > The above command returns a JSON structured like this:
@@ -241,7 +241,7 @@ Create a new pricing.
 
 ```shell
 # Creates a new pricing
-curl -X POST "https://cloudmc_endpoint/rest/pricings" \
+curl -X POST "https://portal.coxedge.com/rest/pricings" \
    -H "MC-Api-Key: your_api_key"
 ```
 
@@ -373,7 +373,7 @@ Update an existing pricing's name and description.
 
 ```shell
 # Creates a new pricing
-curl -X PUT "https://cloudmc_endpoint/rest/pricings/03bc22bd-adc4-46b8-988d-afddc24c0cb5" \
+curl -X PUT "https://portal.coxedge.com/rest/pricings/03bc22bd-adc4-46b8-988d-afddc24c0cb5" \
    -H "MC-Api-Key: your_api_key"
 ```
 
@@ -463,7 +463,7 @@ Optional | &nbsp;
 Delete an existing pricing. A pricing cannot be deleted if it is associated to an applied pricing.
 
 ```shell
-curl -X DELETE "https://cloudmc_endpoint/rest/pricings/03bc22bd-adc4-46b8-988d-afddc24c0cb5" \
+curl -X DELETE "https://portal.coxedge.com/rest/pricings/03bc22bd-adc4-46b8-988d-afddc24c0cb5" \
    -H "MC-Api-Key: your_api_key"
 ```
 

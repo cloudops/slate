@@ -1,6 +1,6 @@
-# CloudMC API documentation
+# Cox Edge API documentation
 
-This repository contains the CloudMC API documentation
+This repository contains the Cox Edge API documentation
 
 ## Writing new documentation
 

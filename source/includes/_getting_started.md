@@ -1,21 +1,21 @@
-# Getting started
+# Getting Started
 
-The CloudMC API allows you to manage your environments and provision resources in a simple programmatic way using standard HTTP requests.
+The Cox Edge API allows you to manage your environments and provision resources in a simple programmatic way using standard HTTP requests.
 
 The API is  [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer). Responses, successful or not, are returned in [JSON](http://www.json.org/). Request bodies must be [JSON](http://www.json.org/), and should be made over SSL.
 
-API endpoint : `https://cloudmc_endpoint/api/v1`
+API endpoint : `https://portal.coxedge.com/api/v1`
 
 ## Authentication
 
 ```shell
 ## To authenticate, add a header
 ## Make sure to replace `your_api_key` with your API key.
-curl "https://cloudmc_endpoint/api/v1/organizations" \
+curl "https://portal.coxedge.com/api/v1/organizations" \
    -H "MC-Api-Key: your_api_key"
 ```
 
-API endpoints are secured by the same role-based access control (RBAC) as the CloudMC portal. To identify who is making the requests, it is required to add a header to your HTTP requests:
+API endpoints are secured by the same role-based access control (RBAC) as the Cox Edge portal. To identify who is making the requests, it is required to add a header to your HTTP requests:
 
 `MC-Api-Key: your_api_key`
 
@@ -23,10 +23,10 @@ API endpoints are secured by the same role-based access control (RBAC) as the Cl
 You must replace <code>your_api_key</code> with your personal API key.
 </aside>
 
-The API key is found from the API keys section under the user profile menu. If you don't see CloudMC API keys section, contact your system administrator as you may not have the permission to see that section. **Your API key carries the same privileges as your CloudMC account, so be sure to keep it secret**. If you think your API has been compromised, regenerate your API key from the API keys section.
+The API key is found from the API keys section under the user profile menu. If you don't see Cox Edge API keys section, contact your system administrator as you may not have the permission to see that section. **Your API key carries the same privileges as your Cox Edge account, so be sure to keep it secret**. If you think your API has been compromised, regenerate your API key from the API keys section.
 
 ## HTTP verbs
-The CloudMC API can be used by any tool that is fluent in HTTP. The appropriate HTTP method should be used depending on the desired action.
+The Cox Edge API can be used by any tool that is fluent in HTTP. The appropriate HTTP method should be used depending on the desired action.
 
 Verbs | Purpose
 ------ | -------
@@ -81,7 +81,7 @@ Verbs | Purpose
 }
 ```
 
-When an API request is successful, the response body will contain the `data` field with the result of the API call. If you're using the [compute API](#compute-api), the `data` field might be empty since most of the operations are asynchronous. The response will contain the `taskId` and `taskStatus` fields so that you can retrieve the result of the operation you executed through the [task API](#tasks).
+When an API request is successful, the response body will contain the `data` field with the result of the API call. If you're using asychronous APIs, the `data` field might be empty since most of the operations are asynchronous. The response will contain the `taskId` and `taskStatus` fields so that you can retrieve the result of the operation you executed through the [task API](#tasks).
 
 Attributes | &nbsp;
 --- | ---
@@ -131,7 +131,7 @@ Each error has additional fields to describe it :
 
 Attributes | &nbsp;
 --- | ---
-`code` | The CloudMC error code.
+`code` | The Cox Edge error code.
 `message` | A human readable explanation of the error code.
 `context` | Additional information.
 

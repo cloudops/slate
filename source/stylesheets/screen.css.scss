@@ -58,7 +58,6 @@ html, body {
   bottom: 0;
   width: $nav-width;
   background-color: $nav-bg;
-  font-size: 13px;
   font-weight: bold;
 
   // language selector for mobile devices
@@ -101,8 +100,17 @@ html, body {
     }
   }
 
+  .logo-wrapper {
+    background: linear-gradient(90deg, #029AE0 0%, #002F87 100%);
+    width: 100%;
+    height: 38px;
+    padding-bottom: 20px;
+  }
+
   .logo {
     margin: $logo-margin;
+    max-width: $nav-width - 75px;
+    filter: brightness(0) invert(100%);
   }
 
   .search-results {
@@ -173,7 +181,6 @@ html, body {
 
   .toc-h2 {
     padding-left: $nav-padding + $nav-indent;
-    font-size: 12px;
   }
 
   .toc-list-h3 {
@@ -183,7 +190,6 @@ html, body {
 
   .toc-h3 {
     padding-left: $nav-padding + 2 * $nav-indent;
-    font-size: 12px;
   }
 
   .toc-list-h4 {
@@ -193,7 +199,6 @@ html, body {
 
   .toc-h4 {
     padding-left: $nav-padding + 3 * $nav-indent;
-    font-size: 12px;
   }
 
   .toc-list-h5 {
@@ -203,7 +208,6 @@ html, body {
 
   .toc-h5 {
     padding-left: $nav-padding + 4 * $nav-indent;
-    font-size: 12px;
   }
 
   .toc-footer {
@@ -231,11 +235,12 @@ html, body {
 .toc-link, .toc-footer li {
   padding: 0 $nav-padding 0 $nav-padding;
   display: block;
+  margin-top: 5px;
   overflow-x: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   text-decoration: none;
-  color: #fff;
+  color: $nav-text;
   transition-property: background;
   transition-timing-function: linear;
   transition-duration: 130ms;
@@ -416,10 +421,6 @@ html, body {
     font-size: 18px;
     margin-top: 1.5em;
     margin-bottom: 0.8em;
-  }
-
-  h4, h5, h6 {
-    font-size: 14px;
   }
 
   hr {

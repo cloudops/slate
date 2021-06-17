@@ -25,7 +25,7 @@ Optional | &nbsp;
 
 ```shell
 curl --request GET \
-  --url 'https://cloudmc_endpoint/api/v2/reports/organization_pricing?start_date=2021-03-30T00%3A00%3A00.000Z&end_date=2021-04-01T23%3A59%3A59.999Z' 
+  --url 'https://portal.coxedge.com/api/v2/reports/organization_pricing?start_date=2021-03-30T00%3A00%3A00.000Z&end_date=2021-04-01T23%3A59%3A59.999Z' 
   \
   --header 'MC-Api-Key: your_api_key'
 ```
@@ -117,7 +117,7 @@ Optional | &nbsp;
 
 ```shell
 curl --request GET \
-  --url 'https://cloudmc_endpoint/api/v2/reports/customers?start_date=2021-04-01T00%3A00%3A00.000Z&end_date=2021-04-07T23%3A59%3A59.999Z' \
+  --url 'https://portal.coxedge.com/api/v2/reports/customers?start_date=2021-04-01T00%3A00%3A00.000Z&end_date=2021-04-07T23%3A59%3A59.999Z' \
   --header 'MC-Api-Key: your_api_key'
 ```
 

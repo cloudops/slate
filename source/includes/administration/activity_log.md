@@ -26,7 +26,7 @@ Optional Query Parameters 	 | &nbsp;
 
 ```shell
 # Retrieve activity list
-curl "https://cloudmc_endpoint/api/v1/activity_log" \
+curl "https://portal.coxedge.com/api/v1/activity_log" \
    -H "MC-Api-Key: your_api_key"
 ```
 > The above command returns a JSON structured like this:
@@ -96,7 +96,7 @@ Optional Query Parameters  | &nbsp;
 
 ```shell
 # Retrieve activity codes
-curl "https://cloudmc_endpoint/api/v1/activity_log/codes" \
+curl "https://portal.coxedge.com/api/v1/activity_log/codes" \
    -H "MC-Api-Key: your_api_key"
 ```
 > The above command returns a JSON structured like this:
@@ -133,7 +133,7 @@ Optional Query Parameters  | &nbsp;
 
 ```shell
 # Retrieve activities summary
-curl "https://cloudmc_endpoint/api/v1/activity_log/summary" \
+curl "https://portal.coxedge.com/api/v1/activity_log/summary" \
    -H "MC-Api-Key: your_api_key"
 ```
 > The above command returns a JSON structured like this:
@@ -150,7 +150,7 @@ curl "https://cloudmc_endpoint/api/v1/activity_log/summary" \
       "userEmail": "username@acme.com",
       "id": "2fd514fb-bdb8-481c-ad0c-7da683181df5",
       "userOrganizationId": "829f0117-4b1f-49bb-8daf-ea4625ea6133",
-      "serviceConnectionType": "stackpath",
+      "serviceConnectionType": "cox",
       "organizationName": "System",
       "created": "2021-03-11T18:45:01.486Z",
       "userId": "ff17986e-8a66-4e23-8cb1-f846b1c1deb6",

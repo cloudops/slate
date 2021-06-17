@@ -11,7 +11,7 @@ A user account allows users to authenticate to an [organization](#administration
 ```shell
 # Retrieve visible users
 
-curl "https://cloudmc_endpoint/api/v1/users" \
+curl "https://portal.coxedge.com/api/v1/users" \
    -H "MC-Api-Key: your_api_key"
 ```
 > The above command returns a JSON structured like this:
@@ -70,7 +70,7 @@ Attributes | &nbsp;
 
 ```shell
 # Retrieve visible user
-curl "https://cloudmc_endpoint/api/v1/users/fdf60a19-980d-4380-acab-914485111305" \
+curl "https://portal.coxedge.com/api/v1/users/fdf60a19-980d-4380-acab-914485111305" \
    -H "MC-Api-Key: your_api_key"
 ```
 > The above command returns a JSON structured like this:
@@ -136,7 +136,7 @@ Attributes | &nbsp;
 ```shell
 # Create a user
 
-curl -X POST "https://cloudmc_endpoint/api/v1/users" \
+curl -X POST "https://portal.coxedge.com/api/v1/users" \
    -H "MC-Api-Key: your_api_key" \
    -H "Content-Type: application/json" \
    -d "request-body"
@@ -188,7 +188,7 @@ The responses' `data` field contains the created [user](#administration-users) w
 
 ```shell
 # Update a user
-curl -X PUT "https://cloudmc_endpoint/api/v1/users/fdf60a19-980d-4380-acab-914485111305" \
+curl -X PUT "https://portal.coxedge.com/api/v1/users/fdf60a19-980d-4380-acab-914485111305" \
    -H "MC-Api-Key: your_api_key" \
    -H "Content-Type: application/json" \
    -d "request-body"
@@ -200,7 +200,7 @@ curl -X PUT "https://cloudmc_endpoint/api/v1/users/fdf60a19-980d-4380-acab-91448
   "userName": "spidey1",
   "firstName": "Peter",
   "lastName": "Parker",
-  "email": "spidey1@cloud.mc",
+  "email": "spidey1@someemail",
   "roles": [
     {
       "id": "dd01c908-371c-4ec5-9fd7-80b1bfac8975"
@@ -233,7 +233,7 @@ The responses' `data` field contains the updated [user](#administration-users).
 
 ```shell
 # Delete a user
-curl "https://cloudmc_endpoint/api/v1/users/fdf60a19-980d-4380-acab-914485111305" \
+curl "https://portal.coxedge.com/api/v1/users/fdf60a19-980d-4380-acab-914485111305" \
    -X DELETE -H "MC-Api-Key: your_api_key"
 
 ```
@@ -251,7 +251,7 @@ Delete a specific user. You will need the `Delete an existing user` permission t
 
 ```shell
 # Unlock a user that was locked from the system
-curl "https://cloudmc_endpoint/api/v1/users/fdf60a19-980d-4380-acab-914485111305/unlock" \
+curl "https://portal.coxedge.com/api/v1/users/fdf60a19-980d-4380-acab-914485111305/unlock" \
    -X POST -H "MC-Api-Key: your_api_key"
 
 ```

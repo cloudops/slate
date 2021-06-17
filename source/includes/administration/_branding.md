@@ -8,7 +8,7 @@ Manage branding.
 
 ```shell
 # Retrieve branding
-curl "https://cloudmc_endpoint/rest/brandings" \
+curl "https://portal.coxedge.com/rest/brandings" \
    -H "MC-Api-Key: your_api_key"
 ```
 > The above command returns JSON structured like this:
@@ -25,7 +25,7 @@ curl "https://cloudmc_endpoint/rest/brandings" \
       },
       "activeLanguages": "en,fr,es",
       "defaultTimezone": "America/Montreal",
-      "applicationName": "CloudMC application",
+      "applicationName": "Cox Edge application",
       "artifacts": [
         {
           "createdAt": "2020-09-14T11:42:52.000Z",
@@ -76,7 +76,7 @@ Attributes | &nbsp;
 
 ```shell
 # Retrieve knowledge base
-curl "https://cloudmc_endpoint/rest/brandings/671f113c-dbbb-4478-be9c-90765b3259e5" \
+curl "https://portal.coxedge.com/rest/brandings/671f113c-dbbb-4478-be9c-90765b3259e5" \
    -H "MC-Api-Key: your_api_key"
 ```
 > The above command returns JSON structured like this:
@@ -92,7 +92,7 @@ curl "https://cloudmc_endpoint/rest/brandings/671f113c-dbbb-4478-be9c-90765b3259
     },
     "activeLanguages": "en,fr,es",
     "defaultTimezone": "America/Montreal",
-    "applicationName": "CloudMC application",
+    "applicationName": "Cox Edge application",
     "artifacts": [
       {
         "createdAt": "2020-09-14T11:42:52.000Z",

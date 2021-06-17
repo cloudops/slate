@@ -11,7 +11,7 @@ authenticated user's organization will be returned
 
 ```shell
 # Retrieve a connection setting associated with an organization and service connection
-curl "https://cloudmc_endpoint/api/v1/reseller/connectionSettings/search?organizationId=10572c3d-16e5-450f-8af8-a01e50dc52d4&connectionId=e0133c59-cfa4-4bd5-9b49-1575aadc4842" \
+curl "https://portal.coxedge.com/api/v1/reseller/connectionSettings/search?organizationId=10572c3d-16e5-450f-8af8-a01e50dc52d4&connectionId=e0133c59-cfa4-4bd5-9b49-1575aadc4842" \
    -H "MC-Api-Key: your_api_key"
 ```
 
@@ -52,7 +52,7 @@ Retrieve the list of connection settings associated with an organization (or its
 
 ```shell
 # Retrieve the list of connection settings associated with an organization
-curl "https://cloudmc_endpoint/api/v1/reseller/connectionSettings/search?organizationId=10572c3d-16e5-450f-8af8-a01e50dc52d4&" \
+curl "https://portal.coxedge.com/api/v1/reseller/connectionSettings/search?organizationId=10572c3d-16e5-450f-8af8-a01e50dc52d4&" \
    -H "MC-Api-Key: your_api_key"
 ```
 
@@ -105,7 +105,7 @@ Attributes | &nbsp;
 
 ```shell
 # Retrieve a connection setting
-curl "https://cloudmc_endpoint/api/v1/reseller/connectionSettings/b3a09847-83e0-4505-b941-c0f565b39686" \
+curl "https://portal.coxedge.com/api/v1/reseller/connectionSettings/b3a09847-83e0-4505-b941-c0f565b39686" \
    -H "MC-Api-Key: your_api_key"
 ```
 
@@ -146,7 +146,7 @@ Create a new connection setting.
 
 ```shell
 # Creates a new connection setting
-curl -X POST "https://cloudmc_endpoint/api/v1/reseller/connectionSettings" \
+curl -X POST "https://portal.coxedge.com/api/v1/reseller/connectionSettings" \
    -H "MC-Api-Key: your_api_key"
 ```
 
@@ -200,7 +200,7 @@ Updates the connection setting associated with the connection settings id.
 
 ```shell
 # Updates an existing connection setting for an organization and service connection
-curl -X PUT "https://cloudmc_endpoint/api/v1/reseller/connectionSettings/b3a09847-83e0-4505-b941-c0f565b39686 \
+curl -X PUT "https://portal.coxedge.com/api/v1/reseller/connectionSettings/b3a09847-83e0-4505-b941-c0f565b39686 \
    -H "MC-Api-Key: your_api_key"
    -H "Content-Type: application/json" \
    -d "request-body"
@@ -261,7 +261,7 @@ Optional | &nbsp;
 Delete an existing connection setting.
 
 ```shell
-curl -X DELETE "https://cloudmc_endpoint/api/v1/reseller/connectionSettings/b3a09847-83e0-4505-b941-c0f565b39686" \
+curl -X DELETE "https://portal.coxedge.com/api/v1/reseller/connectionSettings/b3a09847-83e0-4505-b941-c0f565b39686" \
    -H "MC-Api-Key: your_api_key"
 ```
 
